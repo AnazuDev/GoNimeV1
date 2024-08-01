@@ -15,9 +15,9 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 3000); // Change image every 3 seconds
+    setTimeout(showSlides, 3000);
 }
 
 function downloadApp() {
-    window.location.href = '#'; // Ganti dengan link download sebenarnya
+    window.location.href = 'https://github.com/AnazuDev/GoNimeApp/raw/main/com.anasbex.gonime_%2313_1.0.3-1722502081555-signed.apk';
 }
