@@ -1,58 +1,107 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoNime GN - Aplikasi Streaming Anime</title>
-    <meta name="description" content="GoNime GN adalah aplikasi terbaik untuk streaming anime favorit Anda dengan tampilan yang menawan dan koleksi anime yang lengkap.">
-    <meta name="keywords" content="GoNime, streaming anime, aplikasi anime, anime online, nonton anime">
-    <meta name="author" content="AnasBex-Anazu">
-    <meta name="robots" content="index, follow">
-    
-    <meta property="og:title" content="GoNime GN - Aplikasi Streaming Anime">
-    <meta property="og:description" content="GoNime GN adalah aplikasi terbaik untuk streaming anime favorit Anda dengan tampilan yang menawan dan koleksi anime yang lengkap.">
-    <meta property="og:image" content="images/og-image.jpg"> <!-- Ganti dengan path gambar OG -->
-    <meta property="og:url" content="https://www.gonime.my.id"> <!-- Ganti dengan URL halaman Anda -->
-    <meta property="og:type" content="website">
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="GoNime GN - Aplikasi Streaming Anime">
-    <meta name="twitter:description" content="GoNime GN adalah aplikasi terbaik untuk streaming anime favorit Anda dengan tampilan yang menawan dan koleksi anime yang lengkap.">
-    <meta name="twitter:image" content="images/twitter-card-image.png"> <!-- Ganti dengan path gambar Twitter Card -->
-    <meta name="twitter:url" content="https://www.gonime.my.id">
+  <title>GoNime - Aplikasi Streaming Anime</title>
+  <meta name="description" content="GoNime GN adalah aplikasi terbaik untuk streaming anime favorit Anda dengan tampilan yang menawan dan koleksi anime yang lengkap.">
+  <meta name="keywords" content="GoNime, streaming anime, aplikasi anime, anime online, nonton anime">
+  <meta name="author" content="AnasBex-Anazu">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="GoNime GN - Aplikasi Streaming Anime">
+  <meta property="og:description" content="GoNime GN adalah aplikasi terbaik untuk streaming anime favorit Anda dengan tampilan yang menawan dan koleksi anime yang lengkap.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:url" content="https://www.gonime.my.id">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GoNime GN - Aplikasi Streaming Anime">
+  <meta name="twitter:description" content="GoNime GN adalah aplikasi terbaik untuk streaming anime favorit Anda dengan tampilan yang menawan dan koleksi anime yang lengkap.">
+  <meta name="twitter:image" content="images/twitter-card-image.png">
+  <meta name="twitter:url" content="https://www.gonime.my.id">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
-        <h1>Hello World #Wibu</h1>
-        <p>Aplikasi Terbaik untuk Streaming Anime Kesukaanmu!</p>
+        <div class="logo">GoNime</div>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="/pp/">Privacy Policy</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <section id="screenshots">
-        <h2>GoNime Display</h2>
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="images/Screenshot1.png" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-                <img src="images/Screenshot2.png" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-                <img src="images/Screenshot3.png" style="width:100%">
-            </div>
+
+    <section class="hero">
+      <cemter>
+        <div class="hero-content">
+            <h1>Welcome to GoNime</h1>
+            <p>Nonton anime favoritmu di GoNime!</p>
+            <a onclick="downloadApp()" class="btn">Download 1.0.4 (15)</a><br><br><br>
+            <a onclick="downloadSnap()" class="btn">Versi SNAPSHOT 1.0.4 (18)</a>
+            <br><br><br>
+            <p>Tools tambahan untuk GoNime Mu!</p>
+            <a onclick="injectApp()" class="btn">INJECT GONIME V2</a>
         </div>
-        <br>
-        <div style="text-align:center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
+        </center>
     </section>
 
-    <section id="download">
-        <h2>Backup data, Restore data, Custom tema, Komentar di setiap episode, Dengerin musik anime, Baca berita seputar anime, Cuma Di GONIME!</h2>
-        <button onclick="downloadApp()">Download GoNimeApp</button>
-    </section>
+    <div class="container">
+        <section class="features-section" id="features">
+            <h2>App Features</h2>
+            <div class="features">
+             <div class="feature-card">
+                    <div class="feature-icon">📨</div>
+                    <div class="feature-title">Komentar dan Diskusi</div>
+                    <div class="feature-description">Komentar setiap episode atau berdiskusi di kolom komentar.</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <div class="feature-title">Custom Tema</div>
+                    <div class="feature-description">Sesuaikan tampilan aplikasi sesuai selera Anda.</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📰</div>
+                    <div class="feature-title">Berita Anime</div>
+                    <div class="feature-description">Baca berita seputar anime di GoNime.</div>
+                </div>
+             <div class="feature-card">
+                    <div class="feature-icon">🎵</div>
+                    <div class="feature-title">Music</div>
+                    <div class="feature-description">Dengerin music anime dalam satu aplikasi.</div>
+                </div>
+             <div class="feature-card">
+                    <div class="feature-icon">📺</div>
+                    <div class="feature-title">Player Video</div>
+                    <div class="feature-description">Tonton semuanya menggunakan kualitas tertinggi 1080p gratis .</div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="screenshots-section" id="screenshots">
+            <h2>App Screenshots</h2>
+            <div class="screenshots">
+                <div class="screenshot">
+                    <img src="images/Screenshot1.png" alt="Screenshot 1">
+                </div>
+           <div class="screenshot">
+            <img src="images/Screenshot2.png" alt="Screenshot 2">
+                </div>
+         <div class="screenshot">
+           <img src="images/Screenshot3.png" alt="Screenshot 3">
+                </div>
+                
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 GoNime. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
