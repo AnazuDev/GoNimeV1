@@ -1,77 +1,203 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Style */
 body {
-    padding: 0;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #2A2A2A;
-    color: #333;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
+/* Header Style */
 header {
-    background: linear-gradient(to bottom, #F333D7, #9533F3); /* Gradient dari atas ke bawah */
-    color: white;
-    padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #222;
+  color: #fff;
 }
 
-section {
-    margin: 2em 0;
+header .logo {
+  font-size: 1.5em;
+  font-weight: 600;
 }
 
-section h2 {
-  color: #717171;
-  font-size: 17px;
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  transition: color 0.3s;
 }
 
-.mySlides {
-    display: none;
+header nav ul li a:hover {
+  color: #f39c12;
 }
 
-img {
-   vertical-align: middle;
-   max-width: 40%;
-   border-radius: 13px;
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #141E30, #243B55);
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
 }
 
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  font-weight: 300;
 }
 
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+.hero-content .btn {
+  text-align: center;
+  padding: 15px 30px;
+  background-color: #B958FF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s;
 }
 
-.active {
-    background-color: #717171;
+
+.hero-content .btn:hover {
+  background-color: #A221FF;
 }
 
-button {
-    padding: 1em 2em;
-    font-size: 1em;
-    color: white;
-    background: linear-gradient(to bottom, #F333D7, #9533F3);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
 }
 
-button:hover {
-    background-color: #e84118;
+/* Features Section */
+.features-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.features-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #243B55;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 280px;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 3em;
+  color: #f39c12;
+  margin-bottom: 15px;
+}
+
+.feature-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #243B55;
+}
+
+.feature-description {
+  font-size: 1em;
+  color: #777;
+}
+
+/* Screenshots Section */
+.screenshots-section {
+  text-align: center;
+}
+
+.screenshots-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #243B55;
+}
+
+.screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.screenshot {
+  flex: 1;
+  min-width: 280px;
+  max-width: 320px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.screenshot img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.screenshot:hover img {
+  transform: scale(1.05);
+}
+
+.screenshot:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+  margin-top: 50px;
+}
+
+footer p {
+  font-size: 1em;
+  font-weight: 300;
 }

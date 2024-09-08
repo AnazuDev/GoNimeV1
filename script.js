@@ -19,5 +19,11 @@ function showSlides() {
 }
 
 function downloadApp() {
-    window.location.href = 'https://github.com/AnazuDev/GoNimeApp/raw/main/com.anasbex.gonime_%2313_1.0.3-1722502081555-signed.apk';
+    window.location.href = 'https://github.com/AnazuDev/GoNimeApp/raw/main/com.anasbex.gonime_15_1.0.4-1725789188139-signed.apk';
+}
+function downloadSnap() {
+    window.location.href = 'https://github.com/AnazuDev/GoNimeApp/raw/main/com.anasbex.gonime_15_1.0.4-1725789188139-signed.apk';
+}
+function injectApp() {
+    window.location.href = 'https://anasbex.vercel.app/injectgn/';
 }
